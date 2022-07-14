@@ -1,0 +1,83 @@
+{
+
+  "pageNameComment_1": "Splash",
+  "Welcome!": "Welcome!",
+
+  "pageNameComment_2": "Home",
+  "TitleHomePage": "Home",
+  "Newest_Classes": "Newest Classes",
+  "Popular_Classes": "Popular Classes",
+  "gordon_ramsay": "gordon ramsay",
+  "Teaches_cooking":"Learn to cook: Cooking is not easy",
+  "videos": "videos",
+  "Learn from the best": "Learn from the best",
+  "Download and watch anytime": "Download and watch anytime",
+  "Explore a range of topics": "Explore a range of topics",
+  "Online classes taught by the word’s best. Gordon Ramsay, Stephen Curry, and more.": "Online classes taught by the word’s best. Gordon Ramsay, Stephen Curry, and more.",
+  "Download up to 10 digestible lessons that you can watch offline at any time.": "Download up to 10 digestible lessons that you can watch offline at any time.",
+  "Perfect homemade paste, or write a novel All wit acess to 100+ class.": "Perfect homemade paste, or write a novel All wit acess to 100+ class.",
+
+
+
+  "pageNameComment_3": "AppSettings",
+  "AppSettings": "AppSettings",
+  "Reminders": "Reminders",
+  "App_Reminders": "App Reminders",
+  "languages": "languages",
+  "English": "English",
+  "Arabic": "Arabic",
+  "VQFD":  "Video Quality For Downloads",
+  "Standard": "Standard (recommended)",
+  "DFAULS": "Downloads faster and uses less storage",
+  "High_Definition": "High Definition",
+  "UMS": "Use more storage",
+  "Reminders_Screen": "Reminders Screen",
+  "PYR": "put your reminders",
+  "Offline_Downloads": "Offline Downloads",
+  "DCL": "Delete Completed Lessons",
+  "LA": "Lessons can automatically delete 24 hours after they are watched in full",
+  "DLD":"Delete All Downloads",
+  "RM": "This will remove all downloaded Lesson videos from your phone.",
+  "Nothing_to_delete": "Nothing to delete",
+  "NO_Download": "There are no downloaded lessons on your device.",
+  "Okay": "Okay",
+
+  "pageNameComment_4": "Account Settings",
+  "Account_Settings": "Account Settings",
+  "Edit_Profile": "Edit Profile",
+  "Phone_Number": "Phone Number",
+  "Email": "Email",
+  "Password": "Password",
+  "Change_your_password": "Change your password",
+  "Cancel":  "Cancel",
+  "Okay_2":  "Okay",
+  "Password_changed_succesfully": "Password changed succesfully!",
+  "Log_out_1": "Logout",
+  "You_sure_want_to_log_out": "You sure want to logout",
+  "Log_out_2": "logout",
+
+  "pageNameComment_5": "Settings",
+  "Settings":"Settings",
+
+  "pageNameComment_6": "Downloads",
+  "Downloads":"Downloads",
+  "Delete": "Delete",
+  "you sure dialog": "you sure dialog",
+  "Gordon Ramsay": "Gordon Ramsay",
+  "Teaches_cooking_":"Learn to cook: Cooking is not easy",
+  "Your downloaded classes and lessons will show up here.": "Your downloaded classes and lessons will show up here.",
+  "Explore Classes": "Exlpor Classes",
+
+  "pageNameComment_7": "Search",
+  "Try, Easy ways write a novel": "Try, Easy ways write a novel",
+  "Popular Tags": "Popular Tags",
+  "Business & Management": "Business & Management",
+
+
+  "pageNameComment_8": "Forgot Password",
+  "Forgot Password": "Forgot Password",
+  "Enter your username to reset your password.": "Enter your username to reset your password.",
+  "Username": "Username",
+  "Send": "Send"
+
+}

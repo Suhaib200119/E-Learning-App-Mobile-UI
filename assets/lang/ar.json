@@ -1,0 +1,85 @@
+{
+  "pageNameComment_1": "Splash",
+  "Welcome!": "مرحبا!",
+
+  "pageNameComment_2": "Home",
+  "TitleHomePage": "الصفحة الرئيسية",
+  "Newest_Classes": "أحدث الفصول",
+  "Popular_Classes": "فئات شعبية",
+  "gordon_ramsay": "غوردون رامزي",
+  "Teaches_cooking":"تعلم الطبخ: الطبخ ليس بالأمر السهل",
+  "videos": "فيديو",
+  "Learn from the best": "تعلم من الأفضل",
+  "Download and watch anytime": "تحميل ومشاهدة في أي وقت",
+  "Explore a range of topics": "استكشف مجموعة من الموضوعات",
+  "Online classes taught by the word’s best. Gordon Ramsay, Stephen Curry, and more.": "دروس عبر الإنترنت تدرس بأفضل ما في الكلمة. جوردون رامزي وستيفن كاري والمزيد.",
+  "Download up to 10 digestible lessons that you can watch offline at any time.": "قم بتنزيل ما يصل إلى 10 دروس سهلة الهضم يمكنك مشاهدتها في وضع عدم الاتصال في أي وقت.",
+  "Perfect homemade paste, or write a novel All wit acess to 100+ class.": "معجون مثالي محلي الصنع ، أو كتابة رواية تصل إلى 100+ فئة.",
+
+
+
+
+
+  "pageNameComment_3": "AppSettings",
+  "AppSettings": "إعدادات التطبيق",
+  "Reminders": "تذكير",
+  "App_Reminders": "تذكير التطبيق",
+  "languages": "اللغات",
+  "English": "الإنجليزية",
+  "Arabic": "العربية",
+  "VQFD":  "جودة الفيديو للتنزيل",
+  "Standard": "قياسي (موصى به)",
+  "DFAULS": "يتم التنزيل بشكل أسرع ويستخدم مساحة تخزين أقل",
+  "High_Definition": "عالي الدقة",
+  "UMS": "استخدم المزيد من السعة التخزينية",
+  "Reminders_Screen": "شاشة التذكير",
+  "PYR": "ضع تذكيراتك",
+  "Offline_Downloads": "التنزيلات دون اتصال بالإنترنت",
+  "DCL":"حذف الدروس المكتملة",
+  "LA": "يمكن حذف الدروس تلقائيًا بعد 24 ساعة من مشاهدتها بالكامل",
+  "DLD": "حذف كافة التنزيلات",
+  "RM": "سيؤدي هذا إلى إزالة جميع مقاطع فيديو الدرس التي تم تنزيلها من هاتفك.",
+  "Nothing_to_delete": "لا شيء لحذفه",
+  "NO_Download": "لا توجد دروس تم تنزيلها على جهازك.",
+  "Okay": "تمام",
+
+  "pageNameComment_4": "Account Settings",
+  "Account_Settings": "إعدادت الحساب",
+  "Edit_Profile": "تعديل الملف الشخصي",
+  "Phone_Number": "رقم الهاتف",
+  "Email": "البريد الإلكتروني",
+  "Password": "كلمة المرور",
+  "Change_your_password": "غير كلمة المرور الخاصة بك",
+  "Cancel":  "إلغاء",
+  "Okay_2":  "تمام",
+  "Password_changed_succesfully": "تم تغيير الرقم السري بنجاح",
+  "Log_out_1": "تسجيل الخروج",
+  "You_sure_want_to_log_out": "أنت متأكد من رغبتك في الخروج",
+  "Log_out_2": "تسجيل الخروج",
+
+  "pageNameComment_5": "Settings",
+  "Settings":"الإعدادات",
+
+  "pageNameComment_6": "Downloads",
+  "Downloads":"التحميلات",
+  "Delete": "حذف",
+  "you sure dialog": "أنت متأكد من الحوار",
+  "Gordon Ramsay": "غوردون رامزي",
+  "Teaches_cooking_":"تعلم الطبخ: الطبخ ليس بالأمر السهل",
+  "Your downloaded classes and lessons will show up here.": "ستظهر الدروس والدروس التي تم تنزيلها هنا.",
+  "Explore Classes": "استكشف الفصول",
+
+  "pageNameComment_7": "Search",
+  "Try, Easy ways write a novel": "جرب ، طرق سهلة لكتابة رواية",
+  "Popular Tags": "الكلمات الشعبية",
+  "Business & Management": "إدارة اعمال",
+
+  "pageNameComment_8": "Forgot Password",
+  "Forgot Password": "هل نسيت كلمة السر",
+  "Enter your username to reset your password.": "أدخل اسم المستخدم الخاص بك لإعادة تعيين كلمة المرور الخاصة بك.",
+  "Username": "اسم المستخدم",
+  "Send": "إرسال"
+
+
+
+}
