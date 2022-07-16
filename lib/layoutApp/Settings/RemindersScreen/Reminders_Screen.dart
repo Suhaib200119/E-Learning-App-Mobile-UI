@@ -4,9 +4,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:task_company/Components/Components.dart';
+import 'package:task_company/LocalizationApp/AppLocale.dart';
 import 'package:task_company/Providers/ProviderChangeStates.dart';
-
-import '../AppSettings.dart';
 
 class RemindersScreen extends StatelessWidget {
   DateTime dateTime = DateTime.now();
@@ -20,7 +19,7 @@ class RemindersScreen extends StatelessWidget {
         child: Column(
           children: [
             customAppBar(
-              titleAppBar: "Reminders",
+              titleAppBar: "${getLang(context, "Reminders")}",
               context: context,
               therIsBackButton: true,
               function: () {
@@ -32,12 +31,12 @@ class RemindersScreen extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text(
-                    "Reminders",
+                   Text(
+                    "${getLang(context, "Reminders")}",
                     style: TextStyle(fontSize: 14, color: Color(0xFF6D6D6D)),
                   ),
                   customContainerRemindersScreen(
-                    title: "App Reminders",
+                    title: "${getLang(context, "App Reminders")}",
                     widget: Switch(
                       value: providerController.switchValue_AppReminders,
                       onChanged: (bool value) {
@@ -50,7 +49,7 @@ class RemindersScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: 8),
                   customContainerRemindersScreen(
-                    title: "App Reminders",
+                    title: "${getLang(context, "App Reminders")}",
                     widget: Switch(
                       value: providerController.switchValue_EmailReminders,
                       onChanged: (bool value) {
@@ -64,27 +63,27 @@ class RemindersScreen extends StatelessWidget {
                   const SizedBox(
                     height: 30,
                   ),
-                  const Text(
-                    "Frequency",
+                   Text(
+                    "${getLang(context, "Frequency")}",
                     style: TextStyle(fontSize: 14, color: Color(0xFF6D6D6D)),
                   ),
                   const SizedBox(
                     height: 14,
                   ),
                   customContainerRemindersScreen(
-                    title: "Weekdays",
+                    title: "${getLang(context, "Weekdays")}",
                   ),
                   const SizedBox(height: 8),
                   customContainerRemindersScreen(
-                    title: "Weekends",
+                    title: "${getLang(context, "Weekends")}",
                     widget:
                         IconButton(onPressed: () {}, icon: const Icon(Icons.done)),
                   ),
                   const SizedBox(
                     height: 30,
                   ),
-                  const Text(
-                    "Time of day",
+                   Text(
+                    "${getLang(context, "Time of day")}",
                     style: TextStyle(fontSize: 14, color: Color(0xFF6D6D6D)),
                   ),
                   const SizedBox(
@@ -97,8 +96,6 @@ class RemindersScreen extends StatelessWidget {
                     title: providerController.timeOfDayReminder,
                     widget: IconButton(
                         onPressed: () {
-
-
                         if(Platform.isAndroid){
                           showTimePicker(
                             context: context,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:task_company/LocalizationApp/AppLocale.dart';
 import '../Components/Components.dart';
 import '../Providers/ProviderChangeStates.dart';
 import '../SignIn_SignUp_Screens/SignIn_Screen.dart';
@@ -38,11 +39,10 @@ class FormScreenEditPassword extends StatelessWidget {
             ),
             customButton(
                 height: 50,
-
-                title: "Reset Password",
+                title: "${getLang(context, "Reset Password")}",
                 titleSize: 18,
                 titleColor: const Color(0xFF2C3051),
-                backgroundColor: Color(0xFFEDB423),
+                backgroundColor: const Color(0xFFEDB423),
                 width: 350,
                 function: () {
                   if (formKey_restart.currentState!.validate()) {

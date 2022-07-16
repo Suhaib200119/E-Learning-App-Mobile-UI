@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task_company/LocalizationApp/AppLocale.dart';
 
 import '../models/model_page_view.dart';
 
@@ -14,7 +15,7 @@ class IntroScreen extends StatelessWidget {
       padding: const EdgeInsets.only(top: 100),
       child: Column(
         children: [
-          Text(objectScreenData.title.toString(), style: const TextStyle(fontSize: 22)),//Title Screen
+          Text(getLang(context,objectScreenData.title), style: const TextStyle(fontSize: 22)),//Title Screen
            SizedBox(
             height: heightSizedBox,
           ),
@@ -30,7 +31,7 @@ class IntroScreen extends StatelessWidget {
           SizedBox(
             width: 350,
             child: Text(
-              objectScreenData.subTitle,
+              getLang(context, objectScreenData.subTitle),
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 15,

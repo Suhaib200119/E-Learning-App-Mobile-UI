@@ -54,11 +54,11 @@ Widget customAppBar({
             ),
           ),
         ),
-      Positioned(
-        right: 0,
+      PositionedDirectional(
+        end: 0,
         bottom: 0,
         top: 110,
-        left: 35,
+        start: 35,
         child: Text(
           titleAppBar,
           style: TextStyle(
@@ -437,7 +437,7 @@ Widget customCard({
           ),
           Expanded(
             child: Container(
-              padding: const EdgeInsets.only(left: 5, top: 5),
+              padding: const EdgeInsetsDirectional.only(start: 5, top: 5,end: 10),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.spaceAround,

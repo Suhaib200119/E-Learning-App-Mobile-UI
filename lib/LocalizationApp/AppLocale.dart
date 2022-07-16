@@ -6,17 +6,18 @@ import 'package:flutter/services.dart';
 class  AppLocale {
 
    Locale locale ;
+   Map<String , String>? _loadedLocalizedValues ;
 
 AppLocale(this.locale);
 
-  Map<String , String>? _loadedLocalizedValues ;
+
 
   static AppLocale of (BuildContext context) {
     return Localizations.of(context, AppLocale) ;
   }
 
   Future loadLang() async {
-    String  _langFile = await rootBundle.loadString('assets/lang/${locale.languageCode}.json') ;
+    String  _langFile = await rootBundle.loadString('assets/lang/${locale.languageCode}.json') ;//يجب وضع الملفات في نفس هذا المسار
     Map<String ,dynamic> _loadedValues = jsonDecode(_langFile);
     _loadedLocalizedValues = _loadedValues.map((key, value) => MapEntry(key, value.toString())) ;
   }

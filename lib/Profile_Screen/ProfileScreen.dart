@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:task_company/Components/Components.dart';
+import 'package:task_company/LocalizationApp/AppLocale.dart';
 
 class ProfileScreen extends StatelessWidget {
   double heightListView = 300;
@@ -13,7 +14,8 @@ class ProfileScreen extends StatelessWidget {
             SizedBox(
               height: 250,
               child: Stack(children: [
-                Stack(children: [
+                Stack(
+                    children: [
                   Container(
                     height: 200,
                     width: MediaQuery.of(context).size.width,
@@ -41,18 +43,18 @@ class ProfileScreen extends StatelessWidget {
                             borderRadius: BorderRadius.circular(50),
                               child: Image.asset("assets/images/imageHome.jpg"))),
                     )),
-                const Positioned(
+                 Positioned(
                     left: 150,
                     bottom: 80,
                     child: Text(
-                      "Capidesign",
+                      "${getLang(context, "profile")}",
                       style: TextStyle(fontSize: 32, color: Color(0xFF2C3051)),
                     )),
-                const Positioned(
+                 Positioned(
                     left: 150,
                     bottom: 60,
                     child: Text(
-                      "All-Access",
+                      "${getLang(context, "All-Access")}",
                       style: TextStyle(fontSize: 16, color: Color(0xFF2C3051)),
                     )),
               ]),
@@ -62,8 +64,8 @@ class ProfileScreen extends StatelessWidget {
               child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text(
-                      "Favorites",
+                     Text(
+                      "${getLang(context, "Favorites")}",
                       style: TextStyle(fontSize: 18, color: Color(0xFF2C3051)),
                     ),
                     Container(
@@ -74,19 +76,19 @@ class ProfileScreen extends StatelessWidget {
                         primary: true,
                         itemBuilder: (context, index) {
                           return customCardProfile(
-                              title: "Shonda Rhimes",
+                              title: "${getLang(context, "Shanda Rhymes")}",
                               subTitle:
-                                  "Shonda decribes what fuels her passion.",
+                                  "${getLang(context, "Shanda describes what fuels her passion.")}",
                               imageName: "imageHome.jpg");
                         },
                         itemCount: 40,
                         scrollDirection: Axis.horizontal,
                       ),
                     ),
-                    const Padding(
+                     Padding(
                       padding: EdgeInsets.only(top: 20),
                       child: Text(
-                        "Your classes",
+                        "${getLang(context, "Your classes")}",
                         style:
                             TextStyle(fontSize: 18, color: Color(0xFF2C3051)),
                       ),
@@ -98,7 +100,7 @@ class ProfileScreen extends StatelessWidget {
                        // primary: true,
                         itemBuilder: (context, index) {
                           return TextButton(
-                              onPressed: () {}, child: Text("Culinary"));
+                              onPressed: () {}, child: Text("${getLang(context, "Culinary")}"));
                         },
                         itemCount: 30,
                         scrollDirection: Axis.horizontal,
@@ -113,8 +115,8 @@ class ProfileScreen extends StatelessWidget {
                             therIsPrice: false,
                             context: context,
                             imageName: "imageHome.jpg",
-                            title: "Wolfgang Puck",
-                            description: "Teaches cooking techniques",
+                            title: "${getLang(context, "Wolfgang Puck")}",
+                            description: "${getLang(context, "Teaches cooking techniques")}",
                             videoNumber: 1);
                       },
                       itemCount: 40,

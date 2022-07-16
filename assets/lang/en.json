@@ -16,6 +16,7 @@
   "Online classes taught by the word’s best. Gordon Ramsay, Stephen Curry, and more.": "Online classes taught by the word’s best. Gordon Ramsay, Stephen Curry, and more.",
   "Download up to 10 digestible lessons that you can watch offline at any time.": "Download up to 10 digestible lessons that you can watch offline at any time.",
   "Perfect homemade paste, or write a novel All wit acess to 100+ class.": "Perfect homemade paste, or write a novel All wit acess to 100+ class.",
+  "Skip": "Skip",
 
 
 
@@ -78,6 +79,39 @@
   "Forgot Password": "Forgot Password",
   "Enter your username to reset your password.": "Enter your username to reset your password.",
   "Username": "Username",
-  "Send": "Send"
+  "Send": "Send",
+  "Select which contact details should we use to reset your password": "Select which contact details should we use to reset your password:",
+  "Via SMS":"Via SMS",
+  "Via email": "Via email",
+  "Reset Password": "Reset Password",
+
+  "pageNameComment_9": "Reminders",
+ "App Reminders": "App Reminders",
+  "Frequency": "Frequency",
+  "Weekdays": "Weekdays",
+  "Weekends": "Weekends",
+  "Time of day": "Time of day",
+
+  "pageNameComment_10": "LearningScreen",
+  "Gordon Ramsey": "Gordon Ramsey",
+  "Purchased": "Purchased",
+  "Teaches cooking II: Restaurant recipes at home": "Teaches cooking II: Restaurant recipes at home",
+  "Start Learning": "Start Learning",
+  "Overview": "Overview",
+  "Lessons": "Lessons",
+  "01. Kitchen & Food Safety Lessonn Plans": "01. Kitchen & Food Safety Lessonn Plans",
+"The basic terms used when cooking.": "The basic terms used when cooking.",
+
+
+  "pageNameComment_11": "ProfileScreen",
+  "profile": "Gordon Ramsey",
+  "All-Access": "Purchased",
+  "Favorites": "Favorites",
+  "Shanda Rhymes": "Shanda Rhymes",
+  "Shanda describes what fuels her passion.": "Shanda describes what fuels your passion.",
+  "Your classes": "Your classes",
+  "Culinary": "Culinary",
+  "Wolfgang Puck": "Wolfgang Puck",
+  "Teaches cooking techniques": "Teaches cooking techniques"
 
 }

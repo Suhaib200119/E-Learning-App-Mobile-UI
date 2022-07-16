@@ -3,7 +3,6 @@ import 'dart:async';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:task_company/LearningScreen/Learning_Screen.dart';
 import 'package:task_company/LocalizationApp/AppLocale.dart';
 import 'package:task_company/PaymentScreen/Payment_Screen.dart';
 import 'package:task_company/Providers/ProviderChangeStates.dart';

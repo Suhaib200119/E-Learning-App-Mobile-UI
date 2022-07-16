@@ -13,8 +13,8 @@ import 'package:task_company/layoutApp/LayoutApp.dart';
 import 'SignUp_Screen.dart';
 
 class SignIn extends StatelessWidget {
-  TextEditingController tecName =  TextEditingController();
-  TextEditingController tecPassword =  TextEditingController();
+  TextEditingController tecName = TextEditingController();
+  TextEditingController tecPassword = TextEditingController();
   var form_key = GlobalKey<FormState>();
 
   SignIn({Key? key}) : super(key: key);
@@ -50,14 +50,19 @@ class SignIn extends StatelessWidget {
                 child: Column(
                   children: [
                     customTextFormField(
-                        controller: tecName,
-                        keyboardType: TextInputType.text,
-                        hintText: "Username",
-                        errorMassage: "username",),
+                      controller: tecName,
+                      keyboardType: TextInputType.text,
+                      hintText: "Username",
+                      errorMassage: "username",
+                    ),
                     const SizedBox(
                       height: 15,
                     ),
-                    customTextFormField_Password(textEditingController: tecPassword, obscureText: providerController.obscureTextFieldPassword, providerController: providerController),
+                    customTextFormField_Password(
+                      textEditingController: tecPassword,
+                      obscureText: providerController.obscureTextFieldPassword,
+                      providerController: providerController,
+                    ),
                     const SizedBox(
                       height: 50,
                     ),
@@ -74,23 +79,27 @@ class SignIn extends StatelessWidget {
                             String password = tecPassword.text.trim();
                             if (kDebugMode) {
                               print(
-                                "username: $username >> password: $password");
+                                  "username: $username >> password: $password");
                             }
                             showDialog(
                                 context: context,
                                 builder: (ctx) {
-                                  return customDialog(title:  "Wait a few seconds...", widget: const SpinKitCircle(
-                                    color: Color(0xFFFFC226),
-                                    size: 100.0,
-                                  ),);
-
+                                  return customDialog(
+                                    title: "Wait a few seconds...",
+                                    widget: const SpinKitCircle(
+                                      color: Color(0xFFFFC226),
+                                      size: 100.0,
+                                    ),
+                                  );
                                 });
 
                             Timer(const Duration(seconds: 2), () {
                               Navigator.pop(context);
-                              customNavigation(context: context, screen: LayoutApp(), type: "replacement");
+                              customNavigation(
+                                  context: context,
+                                  screen: LayoutApp(),
+                                  type: "replacement");
                             });
-
                           }
                         }),
                     const SizedBox(
@@ -102,13 +111,18 @@ class SignIn extends StatelessWidget {
                         customGestureDetector(
                             text: "Sign up",
                             function: () {
-                              customNavigation(context: context, screen: SignUp(), type: "noreplacement");
-
+                              customNavigation(
+                                  context: context,
+                                  screen: SignUp(),
+                                  type: "noreplacement");
                             }),
                         customGestureDetector(
                             text: "Forgot your password?",
                             function: () {
-                              customNavigation(context: context, screen: ForgetPassword(), type: "noreplacement");
+                              customNavigation(
+                                  context: context,
+                                  screen: ForgetPassword(),
+                                  type: "noreplacement");
                             }),
                       ],
                     ),

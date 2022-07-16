@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:task_company/Components/Components.dart';
+import 'package:task_company/LocalizationApp/AppLocale.dart';
 import 'package:task_company/SignIn_SignUp_Screens/SignIn_Screen.dart';
 import 'package:task_company/models/model_page_view.dart';
 import 'Intro_Screen/Intro_Screen.dart';
@@ -25,6 +26,7 @@ class _PageViewScreenState extends State<PageViewScreen> {
     ScreenData("Explore a range of topics", "assets/images/image_3.png",
         "Perfect homemade paste, or write a novel All wit acess to 100+ class."), //data screen 3
   ];
+
 
   int initialPage = 0; //initial page in page view
   PageController pageViewController = PageController(
@@ -73,7 +75,7 @@ class _PageViewScreenState extends State<PageViewScreen> {
                   ),
                   customButton(
                       height: 50,
-                      title: "Skip",
+                      title: "${getLang(context, "Skip")}",
                       titleSize:  18,
                       titleColor: const Color(0xFF2C3051),
                       backgroundColor:  Color(0xFFFFC226),

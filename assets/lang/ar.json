@@ -15,6 +15,8 @@
   "Online classes taught by the word’s best. Gordon Ramsay, Stephen Curry, and more.": "دروس عبر الإنترنت تدرس بأفضل ما في الكلمة. جوردون رامزي وستيفن كاري والمزيد.",
   "Download up to 10 digestible lessons that you can watch offline at any time.": "قم بتنزيل ما يصل إلى 10 دروس سهلة الهضم يمكنك مشاهدتها في وضع عدم الاتصال في أي وقت.",
   "Perfect homemade paste, or write a novel All wit acess to 100+ class.": "معجون مثالي محلي الصنع ، أو كتابة رواية تصل إلى 100+ فئة.",
+  "Skip": "تخطي",
+
 
 
 
@@ -78,7 +80,39 @@
   "Forgot Password": "هل نسيت كلمة السر",
   "Enter your username to reset your password.": "أدخل اسم المستخدم الخاص بك لإعادة تعيين كلمة المرور الخاصة بك.",
   "Username": "اسم المستخدم",
-  "Send": "إرسال"
+  "Send": "إرسال",
+  "Select which contact details should we use to reset your password": "حدد تفاصيل الاتصال التي يجب أن نستخدمها لإعادة تعيين كلمة المرور الخاصة بك:",
+  "Via SMS": "عبر الرسائل القصيرة",
+  "Via email": "عبر البريد الالكتروني",
+  "Reset Password": "إعادة تعيين كلمة المرور",
+
+  "pageNameComment_9": "Reminders",
+  "App Reminders": "تذكير التطبيق",
+  "Frequency": "تكرار",
+  "Weekdays": "أيام الأسبوع",
+  "Weekends": "عطلات نهاية الأسبوع",
+  "Time of day": "وقت اليوم",
+
+  "pageNameComment_10": "شاشة التعلم",
+  "Gordon Ramsey": "غوردون رامزي",
+  "Purchased": "تم شراؤها",
+  "Teaches cooking II: Restaurant recipes at home": "يعلم الطبخ الثاني: وصفات المطاعم في المنزل",
+  "Start Learning": "ابدأ بالتعلم",
+  "Overview": "ملخص",
+  "Lessons": "الدروس",
+  "01. Kitchen & Food Safety Lessonn Plans": "01. خطط دروس المطبخ وسلامة الغذاء",
+  "The basic terms used when cooking.": "المصطلحات الأساسية المستخدمة عند الطهي.",
+
+  "pageNameComment_11": "ProfileScreen",
+  "profile": "الملف الشخصي",
+  "All-Access": "دخول كامل",
+  "Favorites": "المفضلة",
+  "Shanda Rhymes": "شاندا رايمز",
+  "Shanda describes what fuels her passion.": "تصف شاندا ما يغذي شغفك.",
+  "Your classes": "الفصول الدراسية",
+  "Culinary": "الطهي",
+  "Wolfgang Puck": "وولفغانغ باك",
+  "Teaches cooking techniques": "يعلم تقنيات الطبخ"
 
 
 

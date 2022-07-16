@@ -4,6 +4,7 @@ import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:gallery_saver/gallery_saver.dart';
 import 'package:provider/provider.dart';
 import 'package:task_company/Components/Components.dart';
+import 'package:task_company/LocalizationApp/AppLocale.dart';
 import 'package:task_company/Providers/ProviderChangeStates.dart';
 import 'package:task_company/Video/Video_Watch/Video_Watch.dart';
 
@@ -55,8 +56,8 @@ class LearningScreen extends StatelessWidget {
                     Column(
                       children: [
                         Row(children: [
-                          const Text(
-                            "Gordon Ramsey",
+                           Text(
+                            "${getLang(context, 'Gordon Ramsey')}",
                             style: TextStyle(
                                 color: Color(0xFFFFC226), fontSize: 22),
                           ),
@@ -78,8 +79,8 @@ class LearningScreen extends StatelessWidget {
                                   right: BorderSide(
                                       width: 1, color: Color(0xFFFFC226)),
                                 )),
-                            child: const Text(
-                              "Purchased",
+                            child:  Text(
+                              "${getLang(context, "Purchased")}",
                               style: TextStyle(
                                   color: Color(0xFFFFC226), fontSize: 14),
                             ),
@@ -109,8 +110,8 @@ class LearningScreen extends StatelessWidget {
                             },
                           ),
                           const SizedBox(width: 80),
-                          const Text(
-                            "15 videos",
+                           Text(
+                            "15 ${getLang(context, "videos")}",
                             style: TextStyle(
                                 fontSize: 14, color: Color(0xFF9BA5FF)),
                           ),
@@ -119,8 +120,8 @@ class LearningScreen extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Container(
-                              child: const Text(
-                                "Teaches cooking II: Restaurant recipes at home",
+                              child:  Text(
+                                "${getLang(context, 'Teaches cooking II: Restaurant recipes at home')}",
                                 style: TextStyle(
                                     fontSize: 16, color: Color(0xFFFFFFFF)),
                               ),
@@ -154,8 +155,8 @@ class LearningScreen extends StatelessWidget {
                 borderRadius: BorderRadius.circular(3),
               ),
               alignment: Alignment.center,
-              child: const Text(
-                "Start Learning",
+              child:  Text(
+                "${getLang(context, "Start Learning")}",
                 style: TextStyle(
                     fontSize: 18,
                     color: Color(0xFF2C3051),
@@ -179,9 +180,9 @@ class LearningScreen extends StatelessWidget {
                   onPressed: (index) {
                     providerController.changeB(index: index);
                   },
-                  children: const [
-                    Text("Overview"),
-                    Text("Lessons"),
+                  children:  [
+                    Text("${getLang(context, "Overview")}"),
+                    Text("${getLang(context, "Lessons")}"),
                   ],
                   isSelected: providerController.b),
             ),
@@ -232,10 +233,10 @@ class LearningScreen extends StatelessWidget {
                           child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: const [
+                              children:  [
                                 Expanded(
                                   child: Text(
-                                    "01. Kitchen & Food Safety Lessonn Plans",
+                                    "${getLang(context, "01. Kitchen & Food Safety Lessonn Plans")}",
                                     style: TextStyle(
                                         fontSize: 14, color: Color(0xFF2C3051)),
                                     overflow: TextOverflow.ellipsis,
@@ -243,7 +244,7 @@ class LearningScreen extends StatelessWidget {
                                 ),
                                 Expanded(
                                   child: Text(
-                                    "The basic terms used when cooking.",
+                                    "${getLang(context, "The basic terms used when cooking.")}",
                                     style: TextStyle(
                                         fontSize: 12, color: Color(0xFF6D6D6D)),
                                   ),
@@ -307,10 +308,10 @@ class LearningScreen extends StatelessWidget {
                             child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                children: const [
+                                children:  [
                                   Expanded(
                                     child: Text(
-                                      "01. Kitchen & Food Safety Lessonn Plans",
+                                      "${getLang(context, "01. Kitchen & Food Safety Lessonn Plans")}",
                                       style: TextStyle(
                                           fontSize: 14, color: Color(0xFF2C3051)),
                                       overflow: TextOverflow.ellipsis,
@@ -318,7 +319,7 @@ class LearningScreen extends StatelessWidget {
                                   ),
                                   Expanded(
                                     child: Text(
-                                      "The basic terms used when cooking.",
+                                      "${getLang(context, "The basic terms used when cooking.")}",
                                       style: TextStyle(
                                           fontSize: 12, color: Color(0xFF6D6D6D)),
                                     ),
