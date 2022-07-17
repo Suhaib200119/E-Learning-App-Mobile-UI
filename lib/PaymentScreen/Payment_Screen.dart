@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:task_company/Components/Components.dart';
+import 'package:task_company/LocalizationApp/AppLocale.dart';
 
 import 'PaymentWidget/Choose_payment_method_dialog_1.dart';
 
@@ -41,12 +42,12 @@ class Payment_Screen extends StatelessWidget {
                       iconSize: 35,
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(left: 8),
+                      padding: const EdgeInsetsDirectional.only(start: 8),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: const [
+                        children:  [
                           Text(
-                            "Gordon Ramsey",
+                            "${getLang(context, "Gordon Ramsey")}",
                             style: TextStyle(
                                 fontSize: 22, color: Color(0xFFFFC226)),
                           ),
@@ -54,7 +55,7 @@ class Payment_Screen extends StatelessWidget {
                             height: 8,
                           ),
                           Text(
-                            "Teaches cooking II: Restaurant recipes at home",
+                            "${getLang(context, "Teaches cooking II: Restaurant recipes at home")}",
                             style: TextStyle(
                                 fontSize: 22, color: Color(0xFFFFFFFF)),
                           ),
@@ -77,20 +78,20 @@ class Payment_Screen extends StatelessWidget {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            const Text(
-                              "All-Access Pass",
+                             Text(
+                              "${getLang(context, "All-Access Pass")}",
                               style: TextStyle(
                                   fontSize: 22, color: Color(0xFF2C3051)),
                             ),
                             const SizedBox(height: 16),
-                            const Text(
-                              "You will get unlimit access to every class you want for a year. All lessons for you auto-renews annually.",
+                             Text(
+                              "${getLang(context, "You will get unlimit access to every class you want for a year. All lessons for you auto-renews annually.")}",
                               style: TextStyle(
                                   fontSize: 16, color: Color(0xFFA2A2A2)),
                             ),
                             const SizedBox(height: 8),
-                            const Text(
-                              "\$ ${"499.99"} / year",
+                             Text(
+                              "\$ ${"499.99"} / ${getLang(context, "year")}",
                               style: TextStyle(
                                   fontSize: 22, color: Color(0xFF2C3051)),
                             ),
@@ -104,7 +105,7 @@ class Payment_Screen extends StatelessWidget {
                                 titleSize: 18,
                                 titleColor: Color(0xFF2C3051),
                                 function: () {},
-                                title: "Get All-Access"),
+                                title: "${getLang(context, "Get All-Access")}"),
                           ],
                         ),
                       ),
@@ -117,20 +118,20 @@ class Payment_Screen extends StatelessWidget {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            const Text(
-                              "This Class Only",
+                             Text(
+                              "${getLang(context, "This Class Only")}",
                               style: TextStyle(
                                   fontSize: 22, color: Color(0xFF2C3051)),
                             ),
                             const SizedBox(height: 16),
-                            const Text(
-                              "A good choice for who want to learn a single class for a long time.",
+                             Text(
+                              "${getLang(context, "A good choice for who want to learn a single class for a long time.")}",
                               style: TextStyle(
                                   fontSize: 16, color: Color(0xFFA2A2A2)),
                             ),
                             const SizedBox(height: 8),
-                            const Text(
-                              "\$ ${89.99} / once",
+                             Text(
+                              "\$ ${89.99} / ${getLang(context, "once")}",
                               style: TextStyle(
                                   fontSize: 22, color: Color(0xFF2C3051)),
                             ),
@@ -152,7 +153,7 @@ class Payment_Screen extends StatelessWidget {
                                         );
                                       });
                                 },
-                                title: "Purchase This Class"),
+                                title: "${getLang(context, "Purchase This Class")}"),
                           ],
                         ),
                       ),

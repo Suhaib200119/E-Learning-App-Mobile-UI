@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:task_company/LocalizationApp/AppLocale.dart';
 import 'package:task_company/Providers/ProviderChangeStates.dart';
 import 'package:task_company/Video/Information/Information.dart';
-
 import '../../Components/Components.dart';
 
 class VideoSettings extends StatelessWidget {
@@ -46,7 +46,7 @@ class VideoSettings extends StatelessWidget {
             child: Column(
               children: [
                 customContainerRemindersScreen(
-                  title: "English",
+                  title: "${getLang(context, "English_2")}",
                   widget: IconButton(
                       onPressed: () {},
                       icon: Icon(
@@ -56,7 +56,7 @@ class VideoSettings extends StatelessWidget {
                 ),
 
                 customContainerRemindersScreen(
-                  title: "Chinese",
+                  title: "${getLang(context, "Chinese")}",
                   widget: IconButton(
                       onPressed: () {},
                       icon: Icon(
@@ -66,7 +66,7 @@ class VideoSettings extends StatelessWidget {
                 ),
 
                 customContainerRemindersScreen(
-                  title: "Japanese",
+                  title: "${getLang(context, "Japanese")}",
                   widget: IconButton(
                       onPressed: () {},
                       icon: Icon(
@@ -76,7 +76,7 @@ class VideoSettings extends StatelessWidget {
                 ),
 
                 customContainerRemindersScreen(
-                  title: "French",
+                  title: "${getLang(context, "French")}",
                   widget: IconButton(
                       onPressed: () {},
                       icon: Icon(

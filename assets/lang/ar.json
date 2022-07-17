@@ -112,7 +112,110 @@
   "Your classes": "الفصول الدراسية",
   "Culinary": "الطهي",
   "Wolfgang Puck": "وولفغانغ باك",
-  "Teaches cooking techniques": "يعلم تقنيات الطبخ"
+  "Teaches cooking techniques": "يعلم تقنيات الطبخ",
+
+  "pageNameComment_12": "Sign in",
+  "sign in": "تسجيل الدخول",
+  "Username_2": "اسم المستخدم",
+  "Wait a few seconds...": "انتظر بضع ثوان ...",
+  "Sign up": "إنشاء حساب",
+  "Forgot your password?": "نسيت رقمك السري؟",
+  "Log in with Facebook": "تسجيل الدخول باستخدام الفيسبوك",
+  "Log in with Google": "تسجيل الدخول عبر جوجل",
+  "password": "كلمه المرور",
+  "You must Enter the password": "يجب عليك إدخال كلمة المرور",
+  "username":"اسم المستخدم",
+  "You must Enter the ":"يجب عليك إدخال ",
+  "Email_2": "بريد إلكتروني",
+  "email": "بريد إلكتروني",
+  "Phone Number": "رقم الهاتف",
+  "phone number": "رقم الهاتف",
+  "I have read and agree to ": "لقد قرأت ووافقت على ",
+  "the Term and Conditions.": "الشروط والأحكام.",
+
+  "pageNameComment_13": "Verification",
+  "Enter 6-digit Verification Code": "أدخل رمز التحقق المكون من 6 أرقام",
+  "The verification code was sent to the phone number ": "تم إرسال رمز التحقق إلى رقم الهاتف ",
+  ". Please enter the code:": ". الرجاء إدخال الرمز:",
+  "Your account created successfully!": "تم إنشاء حسابك بنجاح!",
+  "Resend verification code": "إعادة إرسال رمز التحقق",
+
+  "pageNameComment_14": "Payment_Screen",
+  "Gordon Ramsey_2": "غوردون رامزي",
+  "Teaches cooking II: Restaurant recipes at home_2": "يعلم الطبخ الثاني: وصفات المطاعم في المنزل",
+  "All-Access Pass": "ممر بلا حدود",
+  "You will get unlimit access to every class you want for a year. All lessons for you auto-renews annually.": "ستحصل على وصول غير محدود إلى كل فصل تريده لمدة عام. يتم تجديد جميع الدروس تلقائيًا سنويًا.",
+  "year": "عام",
+  "Get All-Access": "احصل على \"بلا حدود\"",
+  "This Class Only": "\nهذه الفئة فقط",
+  "A good choice for who want to learn a single class for a long time.": "اختيار جيد لمن يرغب في تعلم فصل واحد لفترة طويلة.",
+  "once": "مرة",
+  "Purchase This Class": "شراء هذه الفئة",
+
+  "pageNameComment_15": "dialog_1",
+  "You don’t have any payment method": "ليس لديك أي طريقة دفع",
+  "There is no payment method added to your account.": "لا توجد طريقة دفع مضافة إلى حسابك.",
+  "Add New Payment Method": "أضف طريقة دفع جديدة",
+
+  "pageNameComment_16": "dialog_2",
+  "paypal": "باي بال",
+  "Mastercard": "بطاقة ماستر بطاقة ائتمان",
+  "Visa": "تأشيرة",
+  "Add new method": "أضف طريقة جديدة",
+
+  "pageNameComment_17": "dialog_3",
+  "Card name": "اسم البطاقة",
+  "card name": "اسم البطاقة",
+  "Card number": "رقم البطاقة",
+  "card number": "رقم البطاقة",
+  "Valid until": "صالح حتى",
+  "value":"القيمة",
+  "Add New Card": "إضافة بطاقة جديدة",
+  "Added a new payment method!": "تمت إضافة طريقة دفع جديدة!",
+  "Use Face ID to confirm": "استخدم Face ID للتأكيد",
+  "Tap on your Side Button to active Face ID payment": "اضغط على الزر الجانبي لتفعيل الدفع باستخدام Face ID",
+  "Double tap on your Side Button to confirm your payment": "انقر نقرًا مزدوجًا على الزر الجانبي لتأكيد الدفع",
+
+
+  "pageNameComment_18": "video",
+  "03. Food Safety Lesson Plan": "03. خطة درس سلامة الغذاء",
+  "Use this lesson plan to teach your students the basic terms used when cooking.": "استخدم خطة الدرس هذه لتعليم طلابك المصطلحات الأساسية المستخدمة عند الطهي.",
+  "Read Tutorials": "اقرأ البرامج التعليمية",
+  "01. Kitchen & Food Safety Lessonn Plans_2": "01. خطط دروس المطبخ وسلامة الغذاء",
+  "The basic terms used when cooking._2": "المصطلحات الأساسية المستخدمة عند الطهي.",
+
+  "pageNameComment_19": "TutorialsScreen",
+  "Tutorials": "دروس",
+  "03. Food Safety Lesson Plan_2": "03. خطة درس سلامة الغذاء",
+  "TutorialText":"سواء كنت تعيش بمفردك أو كنت والدًا مشغولًا ، فإن إيجاد الوقت والطاقة لإعداد وجبات الطعام المطبوخة في المنزل قد يبدو مهمة شاقة. في نهاية يوم حافل ، قد يبدو تناول الطعام بالخارج أو طلب الطعام هو الخيار الأسرع والأسهل. لكن الطعام المريح يمكن أن يكون له تأثير كبير على مزاجك وصحتك ، فالأطعمة المصنعة عادة ما تحتوي على نسبة عالية من الإضافات الكيميائية والهرمونات والسكر والملح والدهون غير الصحية والسعرات الحرارية ، وكلها يمكن أن تؤثر سلبًا على عقلك ونظرتك. يمكن أن تجعلك تشعر بالتعب والانتفاخ وسرعة الانفعال ، وتؤدي إلى تفاقم أعراض الاكتئاب والتوتر والقلق ومخاوف الصحة العقلية الأخرى. يمكن أن يؤثر أيضًا على محيط الخصر لديك. دراسة حديثة",
+
+  "pageNameComment_20":"Infomation",
+  "Infomations": "معلومات",
+  "Gordon Ramsey_3": "غوردون رامزي",
+  "Born":"الميلاد",
+  "Nov 8th, 1966": "8 نوفمبر 1966",
+  "Country": "دولة",
+  "Scotland": "اسكتلندا",
+  "Style": "التنسيق",
+  "French, Italian, British": "الفرنسية والإيطالية والبريطانية",
+  "Rating": "تقييم",
+  "3 Stars Michelin Stars": "3 نجوم ميشلان ستارز",
+  "10 Stars Good Food Guide": "10 نجوم دليل الغذاء الجيد",
+  "Website": "موقع الكتروني",
+  "informations":  "كشخصية تلفزيونية واقعية ، يُعرف رامزي بمزاجه الناري وسلوكه الصارم واستخدام الشتائم. غالبًا ما يُدلي بتعليقات صريحة ومثيرة للجدل ، بما في ذلك الإهانات والأفكار حول المتسابقين وقدراتهم في الطهي. يجمع بين الأنشطة في التلفزيون والسينما والضيافة والصناعات الغذائية وقام بترقية وتوظيف العديد من الطهاة الذين تدربوا تحت جناحه. اشتهر رامزي بتقديم برامج تلفزيونية حول الطهي والطعام التنافسي ، مثل المسلسل البريطاني Hell's Kitchen و The F Word و Ramsay's Kitchen Nightmares والمسلسل الأمريكي MasterChef و MasterChef Junior و Hotel Hell والإصدارات الأمريكية من Hell's Kitchen و كوابيس المطبخ. في عام 2018 ، أدرجت فوربس أرباحه عند 62 مليونًا للأشهر الـ 12 الماضية ، وصنفته في المرتبة 33 من حيث أعلى المشاهير ربحًا في العالم.",
+
+
+  "pageNameComment_21":"VideoSettingsScreen",
+  "English_2": "إنجليزي",
+  "Chinese": "صيني",
+  "Japanese": "اليابانية",
+  "French": "فرنسي"
+
+
+
+
+
+
 
 
 

@@ -55,7 +55,7 @@ class _PageViewScreenState extends State<PageViewScreen> {
             Positioned(
               left: 0,
               right: 0,
-              top: 580,
+              top: 590,
               bottom: 0,
               child: Column(
                 mainAxisSize: MainAxisSize.min,

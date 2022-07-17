@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:task_company/Components/Components.dart';
+import 'package:task_company/LocalizationApp/AppLocale.dart';
 import 'package:task_company/PaymentScreen/PaymentWidget/Choose_payment_method_dialog_3.dart';
 
 import 'Choose_payment_method_dialog_1.dart';
@@ -34,21 +35,21 @@ class payment_2 extends StatelessWidget {
           child: Column(
             children: [
               customContainerPaymentMethod(
-                  methodName: "paypal",
+                  methodName: "${getLang(context, "paypal")}",
                   methodData: "*******ller234@gmail.com",
                   fontSize: 14,
                   methodIamge: "assets/images/paypal.png",
                   function: () {}),
               SizedBox(height: 26,),
               customContainerPaymentMethod(
-                  methodName: "Mastercard",
+                  methodName: "${getLang(context, "Mastercard")}",
                   methodData: "****. ****  ****  6758",
                   fontSize: 12,
                   methodIamge: "assets/images/mastercard.png",
                   function: () {}),
               SizedBox(height: 26,),
               customContainerPaymentMethod(
-                  methodName: "Visa",
+                  methodName: "${getLang(context, "Visa")}",
                   methodData: "****. **** ****  8765",
                   fontSize: 12,
                   methodIamge: "assets/images/visa.png",
@@ -58,7 +59,7 @@ class payment_2 extends StatelessWidget {
                 height: 50,
                 width: double.infinity,
                 backgroundColor: Color(0xFFFFC226),
-                title: "Add new method",
+                title: "${getLang(context, "Add new method")}",
                 titleSize: 16,
                 titleColor: Color(0xFF2C3051),
                 function: () {

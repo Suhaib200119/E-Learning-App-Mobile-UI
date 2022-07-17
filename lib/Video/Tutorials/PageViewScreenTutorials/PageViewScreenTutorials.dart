@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task_company/LocalizationApp/AppLocale.dart';
 
 import '../../../models/model_page_view.dart';
 
@@ -24,20 +25,21 @@ class PageViewScreenTutorials extends StatelessWidget {
               height: 5,
             ),
             Text(
-              objectScreenData.title,
+              getLang(context, objectScreenData.title),
               style: const TextStyle(fontSize: 16, color: Color(0xFF2C3051)),
             ),
             SizedBox(
               height: 5,
             ),
             Container(
-              width: 300,
+              width: 350,
               child: Text(
-                objectScreenData.subTitle,
+                getLang(context, objectScreenData.subTitle),
                 style: const TextStyle(
                   fontSize: 12,
                   color: Color(0xFF6D6D6D),
                 ),
+                overflow: TextOverflow.ellipsis,
                 textAlign: TextAlign.center,
               ),
             ),

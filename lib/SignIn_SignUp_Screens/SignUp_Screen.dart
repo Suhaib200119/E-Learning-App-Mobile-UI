@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:task_company/Components/Components.dart';
+import 'package:task_company/LocalizationApp/AppLocale.dart';
 import 'package:task_company/Providers/ProviderChangeStates.dart';
 import 'package:task_company/Verification_Code_Screen/Verification_Code.dart';
-
-import 'SignIn_Screen.dart';
 
 class SignUp extends StatelessWidget {
   TextEditingController tecName = TextEditingController();
@@ -27,7 +26,7 @@ class SignUp extends StatelessWidget {
           children: [
             customAppBar(
                 context: context,
-                titleAppBar: "Sign up",
+                titleAppBar: "${getLang(context, "Sign up")}",
                 function: () {
                   Navigator.pop(context);
 
@@ -44,33 +43,32 @@ class SignUp extends StatelessWidget {
                     customTextFormField(
                         controller: tecName,
                         keyboardType: TextInputType.text,
-                        hintText: "Username",
-                        errorMassage: "username"),
+                        hintText: "${getLang(context, "Username_2")}",
+                        errorMassage: "${getLang(context, "username")}", context: context),
                     const SizedBox(
                       height: 15,
                     ),
                     customTextFormField(
                         controller: tecEmail,
                         keyboardType: TextInputType.emailAddress,
-                        hintText: "Email",
-                        errorMassage: "email"),
+                        hintText: "${getLang(context, "Email_2")}",
+                        errorMassage: "${getLang(context, "email")}", context: context),
                     const SizedBox(
                       height: 15,
                     ),
                     customTextFormField(
                         controller: tecPhoneNumber,
                         keyboardType: TextInputType.phone,
-                        hintText: "Phone Number",
-                        errorMassage: "phone number"),
+                        hintText: "${getLang(context, "Phone Number")}",
+                        errorMassage: "${getLang(context, "phone number")}", context: context),
                     const SizedBox(
                       height: 15,
                     ),
-                    customTextFormField_Password(textEditingController: tecPassword, obscureText: providerController.obscureTextFieldPassword, providerController: providerController),
+                    customTextFormField_Password(textEditingController: tecPassword, obscureText: providerController.obscureTextFieldPassword, providerController: providerController, context: context),
                     const SizedBox(
                       height: 15,
                     ),
-                    customTextFormField_Password(textEditingController: tecConfirmPassword, obscureText: providerController.obscureTextFieldPassword, providerController: providerController),
-
+                    customTextFormField_Password(textEditingController: tecConfirmPassword, obscureText: providerController.obscureTextFieldPassword, providerController: providerController, context: context),
                     const SizedBox(
                       height: 15,
                     ),
@@ -88,19 +86,19 @@ class SignUp extends StatelessWidget {
                         newCheckBoxValue: valueUser!);
                   },
                 ),
-                const Text(
-                  "I have read and agree to ",
+                 Text(
+                  "${getLang(context, "I have read and agree to ")}",
                   style: TextStyle(fontSize: 14.0, color: Color(0xFF6D6D6D)),
                 ),
-                const Text(
-                  "the Term and Conditions.",
+                 Text(
+                  "${getLang(context, "the Term and Conditions.")}",
                   style: TextStyle(fontSize: 14.0, color: Color(0xFFFFC226)),
                 ), //Text
               ],
             ),
             customButton(
                 height: 50,
-                title: "Sgin up",
+                title: "${getLang(context,"Sign up")}",
                 titleSize: 18,
                 titleColor: const Color(0xFF2C3051),
                 backgroundColor: Color(0xFFEDB423),

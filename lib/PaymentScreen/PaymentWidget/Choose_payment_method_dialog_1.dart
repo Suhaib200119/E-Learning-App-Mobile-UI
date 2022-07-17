@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:task_company/Components/Components.dart';
+import 'package:task_company/LocalizationApp/AppLocale.dart';
 
 import 'Choose_payment_method_dialog_2.dart';
 
@@ -23,8 +24,8 @@ class payment_1 extends StatelessWidget {
           padding: const EdgeInsets.all(16),
           child: Column(
             children: [
-              const Text(
-                "You don’t have any payment method",
+               Text(
+                "${getLang(context, "You don’t have any payment method")}",
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 16,
@@ -35,8 +36,8 @@ class payment_1 extends StatelessWidget {
               const SizedBox(height: 8,),
               Image.asset("assets/images/download_Image.png"),
               const SizedBox(height: 8,),
-              const Text(
-                "There is no payment method added to your account.",
+               Text(
+                "${getLang(context, "There is no payment method added to your account.")}",
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 12,
@@ -49,7 +50,7 @@ class payment_1 extends StatelessWidget {
                 height: 50,
                 width: double.infinity,
                 backgroundColor: Color(0xFFFFC226),
-                title: "Add New Payment Method",
+                title: "${getLang(context, "Add New Payment Method")}",
                 titleSize: 16,
                 titleColor: Color(0xFF2C3051),
                 function: () {

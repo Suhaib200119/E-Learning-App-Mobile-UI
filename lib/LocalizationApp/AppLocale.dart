@@ -23,7 +23,7 @@ AppLocale(this.locale);
   }
 
   String getTranslated (String key) {
-    return _loadedLocalizedValues![key] ?? 'ar';
+    return _loadedLocalizedValues![key] ?? 'en';
 
   }
 

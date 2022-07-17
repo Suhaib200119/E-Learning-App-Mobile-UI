@@ -5,6 +5,7 @@ import 'package:task_company/layoutApp/DownloadScreen/Download_Screen.dart';
 import 'package:task_company/layoutApp/HomeScreen/Home_Screen.dart';
 import 'package:task_company/layoutApp/Search_Screen/SearchScreen.dart';
 
+import '../Sp/Sp.dart';
 import '../layoutApp/Settings/SettingsScreen.dart';
 
 
@@ -21,9 +22,9 @@ class ProviderChangeStates extends ChangeNotifier {
     notifyListeners();
   }
 
-  String defLang="en";
+  String defLang="ar";
   changeDefLang(String newLang){
-    defLang=newLang;
+    defLang=newLang;print("defLang provider: $defLang");
     notifyListeners();
   }
 

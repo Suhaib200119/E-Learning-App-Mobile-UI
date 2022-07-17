@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_verification_code/flutter_verification_code.dart';
 import 'package:provider/provider.dart';
+import 'package:task_company/LocalizationApp/AppLocale.dart';
 import 'package:task_company/Providers/ProviderChangeStates.dart';
 import 'package:task_company/SignIn_SignUp_Screens/SignIn_Screen.dart';
 import 'package:task_company/SignIn_SignUp_Screens/SignUp_Screen.dart';
@@ -21,18 +22,18 @@ class VerificationCodeScreen extends StatelessWidget {
           children: [
             customAppBar(
                 context: context,
-                titleAppBar: "Enter 6-digit Verification Code",
-                titleAppBarSize: 34,
+                titleAppBar:
+                    "${getLang(context, "Enter 6-digit Verification Code")}",
+                titleAppBarSize: 24,
                 function: () {
                   Navigator.pop(context);
-
                 }),
             Container(
               margin: const EdgeInsets.only(top: 70, bottom: 30),
               width: 350,
-              child: const Text(
-                "The verification code was sent to the phone number +972502369923. Please enter the code:",
-                style: TextStyle(fontSize: 16, color: Color(0xFF6D6D6D)),
+              child: Text(
+                "${getLang(context, "The verification code was sent to the phone number ")} ${"972502369923+"} ${getLang(context, ". Please enter the code:")}",
+                style: const TextStyle(fontSize: 16, color: Color(0xFF6D6D6D)),
               ),
             ),
             VerificationCode(
@@ -52,15 +53,15 @@ class VerificationCodeScreen extends StatelessWidget {
                     context: context,
                     builder: (ctx) {
                       return customDialog(
-                          title:  "Your account created successfully!",
-                          widget:  Image.asset(
-                                  "assets/images/successfully_Image.png"),
+                          title:
+                              "${getLang(context, "Your account created successfully!")}",
+                          widget: Image.asset(
+                              "assets/images/successfully_Image.png"),
                           therIsButton: true,
-                          titleButton: "Sign in",
-                          function: (){
+                          titleButton: "${getLang(context, "Sign in")}",
+                          function: () {
                             Navigator.pop(context);
                             Navigator.pop(context);
-
                           });
                     });
               },
@@ -79,9 +80,10 @@ class VerificationCodeScreen extends StatelessWidget {
                 onPressed: () {
                   // print("code: ${providerController.code}");
                 },
-                child: const Text(
-                  "Resend varification code",
-                  style: TextStyle(color: Color(0xFF53588A), fontSize: 14),
+                child: Text(
+                  "${getLang(context, "Resend verification code")}",
+                  style:
+                      TextStyle(color: const Color(0xFF53588A), fontSize: 14),
                 )),
           ],
         ),

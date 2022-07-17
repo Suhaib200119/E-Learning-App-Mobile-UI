@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:task_company/Components/Components.dart';
 import 'package:task_company/LearningScreen/Learning_Screen.dart';
+import 'package:task_company/LocalizationApp/AppLocale.dart';
 import 'Choose_payment_method_dialog_2.dart';
 
 class payment_3 extends StatelessWidget {
@@ -38,24 +39,24 @@ class payment_3 extends StatelessWidget {
             customTextFormField(
                 controller: TextEditingController(),
                 keyboardType: TextInputType.text,
-                hintText: "Name on card",
-                errorMassage: "Card Name"),
+                hintText: "${getLang(context, "Card name")}",
+                errorMassage: "${getLang(context, "card name")}", context: context),
             const SizedBox(
               height: 8,
             ),
             customTextFormField(
                 controller: TextEditingController(),
                 keyboardType: TextInputType.number,
-                hintText: "Card number",
-                errorMassage: "Card number"),
+                hintText: "${getLang(context, "Card number")}",
+                errorMassage: "${getLang(context, "card number")}", context: context),
             const SizedBox(
               height: 8,
             ),
             customTextFormField(
                 controller: TextEditingController(),
                 keyboardType: TextInputType.number,
-                hintText: "Valid until (MM/YY)",
-                errorMassage: "Valid until (MM/YY)"),
+                hintText: "${getLang(context, "Valid until")} (MM/YY)",
+                errorMassage: "${getLang(context, "value")}", context: context),
             const SizedBox(
               height: 40,
             ),
@@ -63,7 +64,7 @@ class payment_3 extends StatelessWidget {
               height: 50,
               width: double.infinity,
               backgroundColor: Color(0xFFFFC226),
-              title: "Add New Card",
+              title: "${getLang(context, "Add New Card")}",
               titleSize: 16,
               titleColor: Color(0xFF2C3051),
               function: () {
@@ -74,7 +75,7 @@ class payment_3 extends StatelessWidget {
                         Navigator.of(ctx).pop(true);
                       });
                       return customDialog(
-                          title: "Added a new payment method!",
+                          title: "${getLang(context, "Added a new payment method!")}",
                           widget: Image.asset(
                               "assets/images/successfully_Image.png"));
                     }).then((value) {
@@ -86,9 +87,9 @@ class payment_3 extends StatelessWidget {
                         });
                         return customDialog(
                             therIsheader: true,
-                            header: "Use Face ID to confirm",
+                            header: "${getLang(context, "Use Face ID to confirm")}",
                             title:
-                                "Tap on your Side Button to active Face ID payment",
+                                "${getLang(context, "Tap on your Side Button to active Face ID payment")}",
                             widget: Image.asset(
                                 "assets/images/successfully_Image.png"));
                       }).then((value) {
@@ -100,9 +101,9 @@ class payment_3 extends StatelessWidget {
                           });
                           return customDialog(
                               therIsheader: true,
-                              header: "Use Face ID to confirm",
+                              header: "${getLang(context, "Use Face ID to confirm")}",
                               title:
-                                  "Double tap on your Side Button to confirm your payment",
+                                  "${getLang(context, "Double tap on your Side Button to confirm your payment")}",
                               widget: Image.asset(
                                   "assets/images/successfully_Image.png"));
                         }).then((value) {

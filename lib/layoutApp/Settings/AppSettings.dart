@@ -1,13 +1,16 @@
+import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:task_company/Components/Components.dart';
 import 'package:task_company/LocalizationApp/AppLocale.dart';
 import 'package:task_company/Providers/ProviderChangeStates.dart';
+import 'package:task_company/Sp/Sp.dart';
 
 import 'RemindersScreen/Reminders_Screen.dart';
 
 class AppSettings extends StatelessWidget {
-  const AppSettings({Key? key}) : super(key: key);
+
 
   @override
   Widget build(BuildContext context) {
@@ -34,16 +37,18 @@ class AppSettings extends StatelessWidget {
 
                     style: TextStyle(fontSize: 14, color: Color(0xFF6D6D6D)),
                   ),
-                  customContainerRemindersScreen(
-                    title: "${getLang(context, "App_Reminders")}",
-                    widget: Switch(
-                      value: providerController.switchValue_AppSettings,
-                      onChanged: (bool value) {
-                        providerController.changeSwitchValue_AppSettings(
-                            switchNewValue: value);
-                      },
-                      activeTrackColor: const Color(0xFFFFC226),
-                      activeColor: const Color(0xFFF9F9F9),
+                  FadeInLeftBig(
+                    child: customContainerRemindersScreen(
+                      title: "${getLang(context, "App_Reminders")}",
+                      widget: Switch(
+                        value: providerController.switchValue_AppSettings,
+                        onChanged: (bool value) {
+                          providerController.changeSwitchValue_AppSettings(
+                              switchNewValue: value);
+                        },
+                        activeTrackColor: const Color(0xFFFFC226),
+                        activeColor: const Color(0xFFF9F9F9),
+                      ),
                     ),
                   ),
                   const SizedBox(height: 8),
@@ -51,27 +56,36 @@ class AppSettings extends StatelessWidget {
                     "${getLang(context, "languages")}",
                     style: TextStyle(fontSize: 14, color: Color(0xFF6D6D6D)),
                   ),
-                  customContainerRemindersScreen(
-                    title: "${getLang(context, "English")}",
-                    widget: IconButton(
-                        onPressed: () {
-                          providerController.changeDefLang("en");
-                        },
-                        icon: const Icon(
-                          Icons.done,
-                          color: Color(0xFF2C3051),
-                        )),
+                  FadeInLeftBig(
+                    child: customContainerRemindersScreen(
+                      title: "${getLang(context, "English")}",
+                      widget: IconButton(
+                          onPressed: ()  {
+                            providerController.changeDefLang("en");
+                            Sp().setLangSp(key: "defLang", value: "en");
+
+                          },
+                          icon: const Icon(
+                            Icons.done,
+                            color: Color(0xFF2C3051),
+                          )),
+                    ),
                   ),
-                  customContainerRemindersScreen(
-                    title: "${getLang(context, "Arabic")}",
-                    widget: IconButton(
-                        onPressed: () {
-                          providerController.changeDefLang("ar");
-                        },
-                        icon: const Icon(
-                          Icons.done,
-                          color: Color(0xFF2C3051),
-                        )),
+                  FadeInLeftBig(
+                    child: customContainerRemindersScreen(
+                      
+                      title: "${getLang(context, "Arabic")}",
+                      widget: IconButton(
+                          onPressed: () {
+                            providerController.changeDefLang("ar");
+                            Sp().setLangSp(key: "defLang", value: "ar");
+
+                          },
+                          icon: const Icon(
+                            Icons.done,
+                            color: Color(0xFF2C3051),
+                          )),
+                    ),
                   ),
                   const SizedBox(height: 8),
 
@@ -82,36 +96,45 @@ class AppSettings extends StatelessWidget {
                   const SizedBox(
                     height: 20,
                   ),
-                  customContainerSettings(
-                    title: "${getLang(context, "Standard")}",
-                      subTitle: "${getLang(context, "DFAULS")}",
-                    icon: Icons.done,
-                    iconColor: 0xFF2C3051,
-                    function: () {},
-                    heightSizedBox: 10,
-                  ),
-                  const SizedBox(
-                    height: 15,
-                  ),
-                  customContainerSettings(
-                      title: "${getLang(context, "High_Definition")}",
-                      subTitle: "${getLang(context, "UMS")}",
-                      heightSizedBox: 10,
-                      isButton: false,
-                      function: () {}),
-                  const SizedBox(
-                    height: 15,
-                  ),
-                  customContainerSettings(
-                      title: "${getLang(context, "Reminders_Screen")}",
-                      subTitle: "${getLang(context,"PYR")}",
-                      heightSizedBox: 10,
-                      isButton: true,
-                      icon: Icons.navigate_next,
+                  FadeInLeftBig(
+                    child: customContainerSettings(
+                      
+                      title: "${getLang(context, "Standard")}",
+                        subTitle: "${getLang(context, "DFAULS")}",
+                      icon: Icons.done,
                       iconColor: 0xFF2C3051,
-                      function: () {
-                        customNavigation(context: context, screen: RemindersScreen(), type: "noreplacement");
-                      }),
+                      function: () {},
+                      heightSizedBox: 10,
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 15,
+                  ),
+                  FadeInLeftBig(
+                    child: customContainerSettings(
+                      
+                        title: "${getLang(context, "High_Definition")}",
+                        subTitle: "${getLang(context, "UMS")}",
+                        heightSizedBox: 10,
+                        isButton: false,
+                        function: () {}),
+                  ),
+                  const SizedBox(
+                    height: 15,
+                  ),
+                  FadeInLeftBig(
+                    child: customContainerSettings(
+                      
+                        title: "${getLang(context, "Reminders_Screen")}",
+                        subTitle: "${getLang(context,"PYR")}",
+                        heightSizedBox: 10,
+                        isButton: true,
+                        icon: Icons.navigate_next,
+                        iconColor: 0xFF2C3051,
+                        function: () {
+                          customNavigation(context: context, screen: RemindersScreen(), type: "noreplacement");
+                        }),
+                  ),
                   const SizedBox(
                     height: 40,
                   ),
@@ -122,43 +145,48 @@ class AppSettings extends StatelessWidget {
                   const SizedBox(
                     height: 20,
                   ),
-                  customContainerSettings(
-                    title: "${getLang(context, "DCL")}",
-                    subTitle:
-                        "${getLang(context, "LA")}",
-                    icon: Icons.done,
-                    iconColor: 0xFF2C3051,
-                    function: () {},
-                    heightSizedBox: 10,
+                  FadeInLeftBig(
+                    child: customContainerSettings(
+                      
+                      title: "${getLang(context, "DCL")}",
+                      subTitle:
+                          "${getLang(context, "LA")}",
+                      icon: Icons.done,
+                      iconColor: 0xFF2C3051,
+                      function: () {},
+                      heightSizedBox: 10,
+                    ),
                   ),
                   const SizedBox(
                     height: 15,
                   ),
-                  customContainerSettings(
-                    title: "${getLang(context, "DLD")}",
-                    subTitle:
-                        "${getLang(context, "RM")}",
-                    titleColor: 0xFFF04444,
-                    icon: Icons.delete_forever,
-                    iconColor: 0xFFF04444,
-                    function: () {
-                      showDialog(
-                          context: context,
-                          builder: (ctx) {
-                            return customDialog(
-                                therIsheader: true,
-                                header: "${getLang(context, "Nothing_to_delete")}",
-                                title:
-                                    "${getLang(context, "NO_Download")}",
-                                widget: Image.asset("assets/images/Group.png"),
-                                therIsButton: true,
-                                titleButton: "${getLang(context, "Okay")}",
-                                function: () {
-                                  Navigator.pop(context);
-                                });
-                          });
-                    },
-                    heightSizedBox: 10,
+                  FadeInLeftBig(
+                    child: customContainerSettings(
+                      title: "${getLang(context, "DLD")}",
+                      subTitle:
+                          "${getLang(context, "RM")}",
+                      titleColor: 0xFFF04444,
+                      icon: Icons.delete_forever,
+                      iconColor: 0xFFF04444,
+                      function: () {
+                        showDialog(
+                            context: context,
+                            builder: (ctx) {
+                              return customDialog(
+                                  therIsheader: true,
+                                  header: "${getLang(context, "Nothing_to_delete")}",
+                                  title:
+                                      "${getLang(context, "NO_Download")}",
+                                  widget: Image.asset("assets/images/Group.png"),
+                                  therIsButton: true,
+                                  titleButton: "${getLang(context, "Okay")}",
+                                  function: () {
+                                    Navigator.pop(context);
+                                  });
+                            });
+                      },
+                      heightSizedBox: 10,
+                    ),
                   ),
                 ],
               ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:task_company/Components/Components.dart';
+import 'package:task_company/LocalizationApp/AppLocale.dart';
 
 import '../Tutorials/TutorialsScreen.dart';
 
@@ -71,7 +72,7 @@ class VideoWatch extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        "03. Food Safety Lesson Plan",
+                        "${getLang(context, "03. Food Safety Lesson Plan")}",
                         style: const TextStyle(
                           fontSize: 22,
                           color: Color(0xFF2C3051),
@@ -81,7 +82,7 @@ class VideoWatch extends StatelessWidget {
                         height: 8,
                       ),
                       Text(
-                        "Use this lesson plan to teach your students the basic terms used when cooking.",
+                        "${getLang(context, "Use this lesson plan to teach your students the basic terms used when cooking.")}",
                         style: const TextStyle(
                           fontSize: 14,
                           color: Color(0xFFA2A2A2),
@@ -99,7 +100,7 @@ class VideoWatch extends StatelessWidget {
                           function: () {
                             customNavigation(context: context, screen: TutorialsScreen(), type: "noreplacement");
                           },
-                          title: "Read Tutorials"),
+                          title: "${getLang(context, "Read Tutorials")}"),
                       SizedBox(
                         height: 20,
                       ),
@@ -152,10 +153,10 @@ class VideoWatch extends StatelessWidget {
                                           CrossAxisAlignment.start,
                                       mainAxisAlignment:
                                           MainAxisAlignment.spaceBetween,
-                                      children: const [
+                                      children:  [
                                         Expanded(
                                           child: Text(
-                                            "01. Kitchen & Food Safety Lessonn Plans",
+                                            "${getLang(context, "01. Kitchen & Food Safety Lessonn Plans")}",
                                             style: TextStyle(
                                                 fontSize: 14,
                                                 color: Color(0xFF2C3051)),
@@ -164,7 +165,7 @@ class VideoWatch extends StatelessWidget {
                                         ),
                                         Expanded(
                                           child: Text(
-                                            "The basic terms used when cooking.",
+                                            "${getLang(context, "The basic terms used when cooking.")}",
                                             style: TextStyle(
                                                 fontSize: 12,
                                                 color: Color(0xFF6D6D6D)),

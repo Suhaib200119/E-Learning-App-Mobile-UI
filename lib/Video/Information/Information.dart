@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task_company/LocalizationApp/AppLocale.dart';
 
 class Information extends StatelessWidget {
   const Information({Key? key}) : super(key: key);
@@ -15,8 +16,8 @@ class Information extends StatelessWidget {
 
             },
             icon: Icon(Icons.arrow_back_ios, color: Color(0xFF2C3051))),
-        title: const Text(
-          "Infomation",
+        title:  Text(
+          "${getLang(context, "Infomations")}",
           style: TextStyle(
               fontSize: 24,
               color: Color(0xFF2C3051),
@@ -37,7 +38,7 @@ class Information extends StatelessWidget {
                 height: 10,
               ),
               Text(
-                "Gordon Ramsey",
+                "${getLang(context, "Gordon Ramsey")}",
                 style: TextStyle(
                     fontSize: 24,
                     color: Color(0xFF2C3051),
@@ -52,14 +53,14 @@ class Information extends StatelessWidget {
                 child: Row(
                   children: [
                     Text(
-                      "Born",
+                      "${getLang(context, "Born")}",
                       style: TextStyle(fontSize: 16, color: Color(0xFF2C3051)),
                     ),
                     SizedBox(
                       width: 130,
                     ),
                     Text(
-                      "Nov 8th, 1966",
+                      "${getLang(context, "Nov 8th, 1966")}",
                       style: TextStyle(fontSize: 16, color: Color(0xFF2C3051)),
                     ),
                   ],
@@ -75,14 +76,14 @@ class Information extends StatelessWidget {
                 child: Row(
                   children: [
                     Text(
-                      "Country",
+                      "${getLang(context, "Country")}",
                       style: TextStyle(fontSize: 16, color: Color(0xFF2C3051)),
                     ),
                     SizedBox(
                       width: 105,
                     ),
                     Text(
-                      "Scotland",
+                      "${getLang(context, "Scotland")}",
                       style: TextStyle(fontSize: 16, color: Color(0xFF2C3051)),
                     ),
                   ],
@@ -98,14 +99,14 @@ class Information extends StatelessWidget {
                 child: Row(
                   children: [
                     Text(
-                      "Style",
+                      "${getLang(context, "Style")}",
                       style: TextStyle(fontSize: 16, color: Color(0xFF2C3051)),
                     ),
                     SizedBox(
                       width: 130,
                     ),
                     Text(
-                      "French, Italian, British",
+                      "${getLang(context, "French, Italian, British")}",
                       style: TextStyle(fontSize: 16, color: Color(0xFF2C3051)),
                     ),
                   ],
@@ -121,7 +122,7 @@ class Information extends StatelessWidget {
                 child: Row(
                   children: [
                     Text(
-                      "Rating",
+                      "${getLang(context, "Rating")}",
                       style: TextStyle(fontSize: 16, color: Color(0xFF2C3051)),
                     ),
                     SizedBox(
@@ -131,12 +132,12 @@ class Information extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "3 Stars Michelin Stars",
+                          "${getLang(context, "3 Stars Michelin Stars")}",
                           style:
                               TextStyle(fontSize: 16, color: Color(0xFF2C3051)),
                         ),
                         Text(
-                          "10 Stars Good Food Guide",
+                          "${getLang(context, "10 Stars Good Food Guide")}",
                           style:
                               TextStyle(fontSize: 16, color: Color(0xFF2C3051)),
                         ),
@@ -155,7 +156,7 @@ class Information extends StatelessWidget {
                 child: Row(
                   children: [
                     Text(
-                      "Website",
+                      "${getLang(context, "Website")}",
                       style: TextStyle(fontSize: 16, color: Color(0xFF2C3051)),
                     ),
                     SizedBox(width: 105),
@@ -171,16 +172,7 @@ class Information extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.all(24),
-                child: Text(
-                    "As a reality television personality, Ramsay is known for his fiery temper, "
-                        "strict demeanour and use of expletives. He often makes blunt and controversial comments,"
-                        " including insults and wisecracks about contestants and their cooking abilities. "
-                        "He combines activities in the television, film, hospitality,"
-                        " and food industries and has promoted and hired various chefs who have apprenticed under his wing."
-                        " Ramsay is known for presenting TV programmes about competitive cookery and food, such as the British series Hell's Kitchen, The F Word, and Ramsay's Kitchen Nightmares,"
-                        " the American series MasterChef, MasterChef Junior, and Hotel Hell, "
-                        "and the American versions of Hell's Kitchen and Kitchen Nightmares. In 2018, Forbes listed his earnings at  62 million"
-                        " for the previous 12 months, and ranked him the 33rd-highest-earning celebrity in the world."),
+                child: Text("${getLang(context, "informations")}"),
               ),
             ],
           ),

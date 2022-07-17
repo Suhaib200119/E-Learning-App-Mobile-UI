@@ -35,7 +35,7 @@ class FormScreenUsername extends StatelessWidget {
                   controller: tecUsername,
                   keyboardType: TextInputType.name,
                   hintText: "${getLang(context, "Username")}",
-                  errorMassage: "username"),
+                  errorMassage: "username", context: context),
               const SizedBox(
                 height: 35,
               ),

@@ -1,3 +1,4 @@
+import 'package:animate_do/animate_do.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
@@ -20,75 +21,78 @@ Widget customAppBar({
   String? imageName,
   String  defLang="en",
 }) {
-  return Stack(
-    children: [
-      Container(
-        height: 200,
-        width: MediaQuery.of(context).size.width,
-        color: Color(stackColor),
-      ),
-      Positioned(
-        top: -100,
-        right: -200,
-        child: CircleAvatar(
-          radius: 200,
-          backgroundColor: Color(shapeColor),
+  return FadeInDown(
+    duration: Duration(seconds: 1),
+    child: Stack(
+      children: [
+        Container(
+          height: 200,
+          width: MediaQuery.of(context).size.width,
+          color: Color(stackColor),
         ),
-      ),
-      if (therIsBackButton)
-        Directionality(
-          textDirection: TextDirection.ltr,
-          child: Positioned(
-            right: 250,
-            bottom: 0,
-            top: -30,
-            left: -60,
-            child: IconButton(
-              onPressed: () {
-                function!();
-              },
-              icon: Icon(
-                Icons.arrow_back_ios,
-                color: Color(backButtonColor),
-              ),
-            ),
-          ),
-        ),
-      PositionedDirectional(
-        end: 0,
-        bottom: 0,
-        top: 110,
-        start: 35,
-        child: Text(
-          titleAppBar,
-          style: TextStyle(
-              fontSize: titleAppBarSize, color: Color(titleApppColor)),
-        ),
-      ),
-      if (therIsImageWidget == true)
         Positioned(
-          right: defLang=="en"?  30:300,
-          bottom: 30,
-          child: MaterialButton(
-            onPressed: () {
-              customNavigation(
-                  context: context,
-                  screen: ProfileScreen(),
-                  type: "noreplacement");
-            },
-            child: CircleAvatar(
-              radius: 40,
-              backgroundColor: Colors.transparent,
-              child: Hero(
-                tag: "profile",
-                child: ClipRRect(
-                    borderRadius: BorderRadius.circular(50),
-                    child: Image.asset('assets/images/$imageName')),
+          top: -100,
+          right: -200,
+          child: CircleAvatar(
+            radius: 200,
+            backgroundColor: Color(shapeColor),
+          ),
+        ),
+        if (therIsBackButton)
+          Directionality(
+            textDirection: TextDirection.ltr,
+            child: Positioned(
+              right: 250,
+              bottom: 0,
+              top: -30,
+              left: -60,
+              child: IconButton(
+                onPressed: () {
+                  function!();
+                },
+                icon: Icon(
+                  Icons.arrow_back_ios,
+                  color: Color(backButtonColor),
+                ),
               ),
             ),
           ),
+        PositionedDirectional(
+          end: 0,
+          bottom: 0,
+          top: 110,
+          start: 35,
+          child: Text(
+            titleAppBar,
+            style: TextStyle(
+                fontSize: titleAppBarSize, color: Color(titleApppColor)),
+          ),
         ),
-    ],
+        if (therIsImageWidget == true)
+          Positioned(
+            right: defLang=="en"?  30:300,
+            bottom: 30,
+            child: MaterialButton(
+              onPressed: () {
+                customNavigation(
+                    context: context,
+                    screen: ProfileScreen(),
+                    type: "noreplacement");
+              },
+              child: CircleAvatar(
+                radius: 40,
+                backgroundColor: Colors.transparent,
+                child: Hero(
+                  tag: "profile",
+                  child: ClipRRect(
+                      borderRadius: BorderRadius.circular(50),
+                      child: Image.asset('assets/images/$imageName')),
+                ),
+              ),
+            ),
+          ),
+      ],
+    ),
   );
 }
 // here there is customButton
@@ -169,13 +173,15 @@ Widget customTextFormField(
     {required TextEditingController controller,
     required TextInputType keyboardType,
     required String hintText,
-    required String errorMassage}) {
+    required String errorMassage,
+      required BuildContext context
+    }) {
   return TextFormField(
     controller: controller,
     keyboardType: keyboardType,
     validator: (valeUseur) {
       if (valeUseur!.isEmpty) {
-        return "You must Enter the $errorMassage";
+        return "${getLang(context, "You must Enter the ")}$errorMassage";
       } else {
         return null;
       }
@@ -192,20 +198,22 @@ Widget customTextFormField(
 Widget customTextFormField_Password(
     {required TextEditingController textEditingController,
     required bool obscureText,
-    required ProviderChangeStates providerController}) {
+    required ProviderChangeStates providerController,
+      required BuildContext context,
+    }) {
   return TextFormField(
     controller: textEditingController,
     keyboardType: TextInputType.visiblePassword,
     obscureText: obscureText,
     validator: (inputUser) {
       if (inputUser!.isEmpty) {
-        return "You must Enter the password";
+        return "${getLang(context, "You must Enter the password")}";
       } else {
         return null;
       }
     },
     decoration: InputDecoration(
-        hintText: "Password",
+        hintText: "${getLang(context, "password")}",
         hintStyle: const TextStyle(color: Color(0xFFA2A2A2)),
         suffixIcon: IconButton(
             onPressed: () {

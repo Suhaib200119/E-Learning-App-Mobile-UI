@@ -28,11 +28,11 @@ class FormScreenEditPassword extends StatelessWidget {
         key: formKey_restart,
         child: Column(
           children: [
-            customTextFormField_Password(textEditingController: tecPassword, obscureText: providerController.obscureTextFieldPassword, providerController: providerController),
+            customTextFormField_Password(textEditingController: tecPassword, obscureText: providerController.obscureTextFieldPassword, providerController: providerController, context: context),
             const SizedBox(
               height: 15,
             ),
-            customTextFormField_Password(textEditingController: tecConfirmPassword, obscureText: providerController.obscureTextFieldPassword, providerController: providerController),
+            customTextFormField_Password(textEditingController: tecConfirmPassword, obscureText: providerController.obscureTextFieldPassword, providerController: providerController, context: context),
 
             const SizedBox(
               height: 50,

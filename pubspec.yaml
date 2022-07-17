@@ -44,6 +44,14 @@ dependencies:
   gallery_saver: ^2.3.2
   curved_navigation_bar: ^1.0.3
   local_auth: ^2.1.0
+  shared_preferences:
+  animate_do: ^2.1.0
+  flutter_launcher_icons: "^0.9.2"
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/iconApp.png"
 
 dev_dependencies:
   flutter_test:
