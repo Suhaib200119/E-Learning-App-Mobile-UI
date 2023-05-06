@@ -1,16 +1,34 @@
-# task_company
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![12](https://user-images.githubusercontent.com/76217140/236635119-e630df61-49b3-4a01-889d-b31cb6aff699.png)
+![13](https://user-images.githubusercontent.com/76217140/236635197-12671c3e-0d74-4fc8-b52c-237dac2ac720.png)
+![14](https://user-images.githubusercontent.com/76217140/236635275-fb0d1e64-2aad-42dc-8c60-d4c13b7d28a6.png)
+![15](https://user-images.githubusercontent.com/76217140/236635380-09257475-223f-40c2-9d54-2f747e4d6fbc.png)
+![16](https://user-images.githubusercontent.com/76217140/236635435-fdd70277-1577-4b39-bf0b-8125f8225a4f.png)
+![17](https://user-images.githubusercontent.com/76217140/236635511-a60ab70b-24a5-42b2-8977-a41bf7cc2e4f.png)
+![18](https://user-images.githubusercontent.com/76217140/236635580-4e67ef0c-9da4-4758-97e7-1c924ba57b9b.png)
+![19](https://user-images.githubusercontent.com/76217140/236635636-4ce7c2f4-3298-4b2c-b622-86155fc2b239.png)
+![20](https://user-images.githubusercontent.com/76217140/236635708-e71eb550-293e-498a-80d6-6a88bcb6697f.png)
+![21](https://user-images.githubusercontent.com/76217140/236635830-57faa4d2-602d-4e27-9f3c-4e7d6cb118aa.png)
+![22](https://user-images.githubusercontent.com/76217140/236635912-f07c3553-4443-4eca-8484-52660738208b.png)
+![23](https://user-images.githubusercontent.com/76217140/236635981-d0655acf-eae6-483a-8fc5-49b87438d40f.png)
+![24](https://user-images.githubusercontent.com/76217140/236636032-94f5f62e-3375-4aa3-bd2f-c1bdfca14e48.png)
+![25](https://user-images.githubusercontent.com/76217140/236636114-cd4d99ab-4ad8-4cdf-be26-687b12a0bef7.png)
+![26](https://user-images.githubusercontent.com/76217140/236636190-6eb8f9ff-8a83-4b08-a566-f81b5802ea42.png)
+![27](https://user-images.githubusercontent.com/76217140/236636252-87e70ed5-09ab-4678-9aac-fb87c264fc33.png)
+![28](https://user-images.githubusercontent.com/76217140/236636335-dbd89bed-d5fb-4859-95b7-629134bdaca2.png)
+![29](https://user-images.githubusercontent.com/76217140/236636412-b38d941b-ef65-4327-9e13-63d5b18feb76.png)
+![30](https://user-images.githubusercontent.com/76217140/236636469-25f88bab-1e61-4da3-b691-76f9c4263166.png)
+![31](https://user-images.githubusercontent.com/76217140/236636550-3e934a60-614b-42ff-8cf8-0bf0cb294ed6.png)
+![32](https://user-images.githubusercontent.com/76217140/236636631-b90f6a78-1b27-4a0c-81e4-aebb1e87490c.png)
+![33](https://user-images.githubusercontent.com/76217140/236636747-bbb7d406-cd67-4882-8dd5-9102389889e1.png)
+![34](https://user-images.githubusercontent.com/76217140/236636835-455383c2-66d5-45bc-98f5-defc8bc52564.png)
+![35](https://user-images.githubusercontent.com/76217140/236636910-6afeef69-03cb-4508-8f9d-292d2fbf91ff.png)
+![1](https://user-images.githubusercontent.com/76217140/236636990-899e3b15-2f5a-4487-830c-663d70568223.png)
+![2](https://user-images.githubusercontent.com/76217140/236637032-e3bf99e7-4c22-45be-8067-316649bb4adc.png)
+![3](https://user-images.githubusercontent.com/76217140/236637105-93d63cdc-ba59-4740-a50d-0b859e113b6c.png)
+![4](https://user-images.githubusercontent.com/76217140/236637173-a91fcb97-8221-495e-bc35-5fec78bd225a.png)
+![5](https://user-images.githubusercontent.com/76217140/236637223-1e94d38a-868c-49f6-be0d-3340c8481285.png)
+![6](https://user-images.githubusercontent.com/76217140/236637262-9297da7c-cccd-4059-a9ab-7a269183fbf4.png)
+![7](https://user-images.githubusercontent.com/76217140/236637322-d0af2da9-0c76-4c77-9cf3-c1db9b63d71f.png)
+![8](https://user-images.githubusercontent.com/76217140/236637405-be178399-355f-42a1-82e2-4e012fdbe67f.png)
+![9](https://user-images.githubusercontent.com/76217140/236637442-b86663db-83ef-4685-9491-9b33b26af248.png)
+![10](https://user-images.githubusercontent.com/76217140/236637527-8622cac0-8900-4108-8bdf-c58a771b2368.png)
